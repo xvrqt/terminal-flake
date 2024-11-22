@@ -10,9 +10,11 @@
     noto-fonts-cjk-sans
     noto-fonts-emoji
 
+    MapleMono-ttf
+
     dina-font
     # Collision at last build
-    #proggyfonts
+    proggyfonts
     liberation_ttf
     mplus-outline-fonts.githubRelease
   ];
