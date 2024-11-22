@@ -20,7 +20,7 @@
       lib = pkgs.lib;
       pkgs = import nixpkgs {inherit system;};
       # New Config Options
-      options = import ./options.nix {inherit lib;};
+      options = import ./options.nix {inherit lib emulators;};
       # Which terminals are available to enable
       emulators = ["alacritty" "foot"];
     in rec {
