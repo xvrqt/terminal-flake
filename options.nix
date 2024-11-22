@@ -26,7 +26,7 @@
       # Which shell to use in the terminal emulator
       shell = lib.mkOption {
         type = lib.types.enum shells;
-        default = "fish";
+        default = "zsh";
       };
       # Which CLI tools to install
       programs = lib.mkOption {
