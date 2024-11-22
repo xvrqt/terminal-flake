@@ -1,7 +1,5 @@
 {emulators, ...}: let
-  #######################
-  ## IMPORT SUBMODULES ##
-  #######################
+  # Import the Home Manager configurations for each emulator
   imports =
     builtins.map
     (u: ./${u}/homeManagerModule.nix)
