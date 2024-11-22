@@ -27,6 +27,11 @@
       emulators = ["alacritty" "foot"];
       # Required in all modules
       required = [options fonts];
+      # Enable the config of other sub-flakes (CLI & NeoVim)
+      cfg = {config, ...}: {
+        # Enable the shell by default
+        programs.${config.terminal.shell}.enable = lib.mkDefault true;
+      };
     in rec {
       homeManagerModules = {
         maximal = {
@@ -38,6 +43,8 @@
               neovim.homeManagerModules.${system}.default
               # Terminal Emulator Configurations
               (import ./homeManagerModule.nix {inherit lib emulators;})
+              # Configure the sub-flakes based on terminal options
+              cfg
             ]
             ++ required;
         };
