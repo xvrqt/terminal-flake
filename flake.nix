@@ -4,8 +4,8 @@
     flake-utils.url = "github:numtide/flake-utils";
 
     # Useful CLI programs
-    cli.url = "github:xvrqt/cli-flake";
-    #cli.url = "/home/xvrqt/Development/cli-flake";
+    #cli.url = "github:xvrqt/cli-flake";
+    cli.url = "/home/xvrqt/Development/cli-flake";
     neovim.url = "github:xvrqt/neovim-flake";
   };
 
@@ -20,16 +20,16 @@
       lib = pkgs.lib;
       pkgs = import nixpkgs {inherit system;};
       # Fonts to include for proper rendering of some features
-      fonts = import ./fonts.nix {inherit pkgs;};
+      fonts = import ./fonts.nix;
       # New Config Options
-      options = import ./options.nix {inherit lib emulators;};
+      options = import ./options.nix {inherit emulators;};
       # Which terminals are available to enable
       emulators = ["alacritty" "foot"];
-      # Required in all modules
+      # Submodules required in all outputs
       required = [options fonts];
       # Enable the config of other sub-flakes (CLI & NeoVim)
       cfg = {config, ...}: {
-        # Enable the shell by default
+        # Enable the shell in `programs`
         programs.${config.terminal.shell}.enable = lib.mkDefault true;
       };
     in rec {
@@ -42,7 +42,7 @@
               # Extremely customized NeoVim
               neovim.homeManagerModules.${system}.default
               # Terminal Emulator Configurations
-              (import ./homeManagerModule.nix {inherit lib emulators;})
+              (import ./homeManagerModule.nix {inherit emulators;})
               # Configure the sub-flakes based on terminal options
               cfg
             ]
