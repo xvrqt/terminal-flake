@@ -19,6 +19,10 @@
     flake-utils.lib.eachDefaultSystem (system: let
       lib = pkgs.lib;
       pkgs = import nixpkgs {inherit system;};
+      # New Config Options
+      options = import ./options.nix {inherit lib;};
+      # Which terminals are available to enable
+      emulators = ["alacritty" "foot"];
     in rec {
       homeManagerModules = {
         maximal = {
@@ -30,7 +34,10 @@
             # Useful system fonts
             (import ./fonts.nix {inherit pkgs;})
             # Terminal Options
-            (import ./options.nix {inherit pkgs lib;})
+            # (import ./options.nix {inherit lib;})
+            options
+            # Terminal Emulator Configurations
+            (import ./homeManagerModule.nix {inherit lib emulators;})
           ];
         };
         # I want it all (by default)

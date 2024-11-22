@@ -1,4 +1,8 @@
-{lib, ...}: let
+{
+  lib,
+  emulators,
+  ...
+}: let
   ###################
   ## SETUP OPTIONS ##
   ###################
@@ -12,7 +16,7 @@
   # Ref: https://github.com/xvrqt/cli-flake
   shells = ["zsh" "bash" "fish" "nushell"];
   # Which terminals are available to enable
-  emulators = ["alacritty" "foot"];
+  #  emulators = ["alacritty" "foot"];
 
   options = {
     terminal = {
@@ -36,14 +40,6 @@
     };
   };
 
-  #######################
-  ## IMPORT SUBMODULES ##
-  #######################
-  imports =
-    builtins.map
-    (u: ./${u}/homeManagerModule.nix)
-    emulators;
-
   ###########################
   ## CONVENIENCE FUNCTIONS ##
   ###########################
@@ -53,6 +49,5 @@
     default = true;
   };
 in {
-  inherit imports;
   inherit options;
 }
