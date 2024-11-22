@@ -10,7 +10,7 @@
     noto-fonts-cjk-sans
     noto-fonts-emoji
 
-    MapleMono-ttf
+    maple-mono-SC-NF
 
     dina-font
     # Collision at last build
