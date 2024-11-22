@@ -33,9 +33,8 @@
             (import ./options.nix {inherit pkgs lib;})
           ];
         };
+        # I want it all (by default)
+        default = homeManagerModules.maximal;
       };
-
-      # I want it all (by default)
-      default = homeManagerModules.maximal;
     });
 }
