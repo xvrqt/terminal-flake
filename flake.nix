@@ -4,7 +4,8 @@
     flake-utils.url = "github:numtide/flake-utils";
 
     # Useful CLI programs
-    cli.url = "github:xvrqt/cli-flake";
+    #cli.url = "github:xvrqt/cli-flake";
+    cli.url = "/home/xvrqt/Development/cli-flake";
     neovim.url = "github:xvrqt/neovim-flake";
   };
 
@@ -16,6 +17,7 @@
     ...
   }:
     flake-utils.lib.eachDefaultSystem (system: let
+      lib = pkgs.lib;
       pkgs = import nixpkgs {inherit system;};
     in rec {
       homeManagerModules = {
@@ -25,32 +27,15 @@
             cli.homeManagerModules.${system}.default
             # Extremely customized NeoVim
             neovim.homeManagerModules.${system}.default
-            # List of useful fonts
+            # Useful system fonts
             (import ./fonts.nix {inherit pkgs;})
+            # Terminal Options
+            (import ./options.nix {inherit pkgs lib;})
           ];
-
-          # Enable our terminal emulator
-          programs.alacritty = {
-            enable = true;
-            settings = {
-              general.import = ["/home/amy/.config/alacritty/theme.toml"];
-              terminal = {
-                shell.args = ["--login"];
-                shell.program = "${pkgs.zsh}/bin/zsh";
-              };
-            };
-          };
-
-          # Configure and style Alacritty
-          home = {
-            file = {
-              ".config/alacritty/theme.yml".source = ./themes/catppuccin-mocha.yml;
-            };
-          };
         };
-
-        # I want it all (by default)
-        default = homeManagerModules.maximal;
       };
+
+      # I want it all (by default)
+      default = homeManagerModules.maximal;
     });
 }
