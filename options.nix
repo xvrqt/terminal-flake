@@ -43,11 +43,6 @@
       };
     };
   };
-
-  config = {
-    # Enable the shell by default
-    programs.${config.terminal.shell}.enable = lib.mkDefault true;
-  };
 in {
   inherit config;
   inherit options;
