@@ -6,11 +6,11 @@
         "nixpkgs": "nixpkgs"
       },
       "locked": {
-        "lastModified": 1732239646,
-        "narHash": "sha256-IDEFbmEQFnk1EppqQz3C8xrmx8cmE08mHFywLqdjhVc=",
+        "lastModified": 1732239780,
+        "narHash": "sha256-gC+EHgLZMb4BM7LV7dfFdFlkmeChDNbBY7K/xzsVp+0=",
         "ref": "refs/heads/dev",
-        "rev": "1f0b5093e036ff1d1e1f1c960b3a29ef77440eec",
-        "revCount": 67,
+        "rev": "32f12fe56334a264e7480f90f621d9f5b0c9dfad",
+        "revCount": 69,
         "type": "git",
         "url": "file:///home/xvrqt/Development/cli-flake"
       },
