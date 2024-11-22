@@ -13,8 +13,6 @@
     maple-mono-SC-NF
 
     dina-font
-    # Collision at last build
-    proggyfonts
     liberation_ttf
     mplus-outline-fonts.githubRelease
   ];
