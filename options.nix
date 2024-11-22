@@ -44,6 +44,5 @@
     };
   };
 in {
-  inherit config;
   inherit options;
 }
