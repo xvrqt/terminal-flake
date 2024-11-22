@@ -32,7 +32,7 @@ in {
         # Theme
         include = "${catppuccinMochaTheme}";
         login-shell = "yes";
-        dpi-aware = "yes";
+        dpi-aware = "no";
 
         # Font Rendering
         font = "${font}:${withSize}";
