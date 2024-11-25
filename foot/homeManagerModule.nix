@@ -37,8 +37,8 @@ in {
         # Font Rendering
         font = "${font}:${withSize}";
         font-bold = "${font}:style=Bold:${withSize}";
-        font-italic = "${fontItalic}:style=Italic:${withSize}";
-        font-bold-italic = "${fontItalic}:style=BoldItalic:${withSize}";
+        #font-italic = "${fontItalic}:style=Italic:${withSize}";
+        #font-bold-italic = "${fontItalic}:style=BoldItalic:${withSize}";
         box-drawings-uses-font-glyphs = false;
       };
       mouse = {
