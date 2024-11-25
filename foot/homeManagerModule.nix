@@ -15,7 +15,7 @@
   # Font Config
   font = "JetBrainsMono NF";
   size = "12.5";
-  fontItalic = "Maple Mono SC NF";
+  #fontItalic = "Maple Mono SC NF";
 in {
   # Enable foot
   programs.foot = {
