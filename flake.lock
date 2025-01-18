@@ -6,11 +6,11 @@
         "nixpkgs": "nixpkgs"
       },
       "locked": {
-        "lastModified": 1737174705,
-        "narHash": "sha256-lh3pWstZX1AQYXc+bwDKrgjR1EVeEuD54+nVJHtIpVE=",
+        "lastModified": 1737175474,
+        "narHash": "sha256-0BDa0dLkspRS1SelZIy9EPqwQ4nqWSiwyoppTydfakg=",
         "owner": "xvrqt",
         "repo": "cli-flake",
-        "rev": "ddaf5c39544a2d950df4911a2fc76e7b53a1d102",
+        "rev": "250115c4459fc092fcf4e9367282eb6cc9c20029",
         "type": "github"
       },
       "original": {
