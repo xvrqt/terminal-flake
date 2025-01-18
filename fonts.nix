@@ -1,10 +1,7 @@
 {pkgs, ...}: {
   fonts.fontconfig.enable = true;
-  fonts.packages = [
-    pkgs.nerdfonts
-  ];
   home.packages = with pkgs; [
-    # nerdfonts
+    nerd-fonts
 
     fira-code
     fira-code-symbols
