@@ -8,15 +8,15 @@
       "locked": {
         "lastModified": 1737757873,
         "narHash": "sha256-ZyZNOhB4rx7O9Oma1ovc7Etm59jdpUlWLfPq3MBupv4=",
-        "owner": "xvrqt",
-        "repo": "cli-flake",
+        "ref": "refs/heads/master",
         "rev": "156ead2c984f35d74707d6c71c3e6760ca2a1331",
-        "type": "github"
+        "revCount": 86,
+        "type": "git",
+        "url": "file:///home/crow/Development/cli-flake"
       },
       "original": {
-        "owner": "xvrqt",
-        "repo": "cli-flake",
-        "type": "github"
+        "type": "git",
+        "url": "file:///home/crow/Development/cli-flake"
       }
     },
     "flake-parts": {
