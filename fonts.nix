@@ -1,4 +1,4 @@
-{pkgs, ...}: {
+{ pkgs, ... }: {
   fonts.fontconfig.enable = true;
   home.packages = with pkgs; [
     nerd-fonts.symbols-only
@@ -15,7 +15,8 @@
     noto-fonts-cjk-sans
     noto-fonts-emoji
 
-    maple-mono-SC-NF
+    # maple-mono-SC-NF
+    maple-mono.NF-CN
 
     dina-font
     liberation_ttf
