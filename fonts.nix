@@ -15,10 +15,8 @@
     noto-fonts-cjk-sans
     noto-fonts-emoji
 
-    # maple-mono-SC-NF
-    maple-mono.NF-CN
-
-    dina-font
+    # maple-mono.NF-CN
+    maple-mono.truetype
     liberation_ttf
     mplus-outline-fonts.githubRelease
   ];

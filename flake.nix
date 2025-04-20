@@ -8,12 +8,15 @@
     cli.url = "github:xvrqt/cli-flake";
     # Preconfigured NeoVim
     neovim.url = "github:xvrqt/neovim-flake";
+    # Ghostty Terminal Emulator Flake
+    ghostty.url = "github:ghostty-org/ghostty";
   };
 
   outputs =
     { cli
     , neovim
     , nixpkgs
+    , ghostty
     , flake-utils
     , ...
     }:
@@ -33,7 +36,7 @@
 
       # Configuration Parameters
       # Which terminals are available to enable
-      emulators = [ "alacritty" "foot" ];
+      emulators = [ "alacritty" "foot" "ghostty" ];
 
       # Enable the config of other sub-flakes (CLI & NeoVim)
       configure_shell = { config, ... }: {
