@@ -5,7 +5,7 @@
     flake-utils.url = "github:numtide/flake-utils";
 
     # Useful CLI programs
-    cli.url = "github:xvrqt/cli-flake";
+    cli.url = "git+https://git.irlqt.net/crow/cli-flake";
     # Preconfigured NeoVim
     neovim.url = "github:xvrqt/neovim-flake";
     # Ghostty Terminal Emulator Flake
