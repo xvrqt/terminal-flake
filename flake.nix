@@ -6,6 +6,7 @@
 
     # Useful CLI programs
     cli.url = "git+https://git.irlqt.net/crow/cli-flake";
+    cli.inputs.nixpkgs.follows = "nixpkgs";
     # Preconfigured NeoVim
     neovim.url = "github:xvrqt/neovim-flake";
     # Ghostty Terminal Emulator Flake
