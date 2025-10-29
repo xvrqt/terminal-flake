@@ -8,11 +8,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1761775966,
-        "narHash": "sha256-aEGDnebmR2QqXtc0BOF09akOq2CN780WUFpWIaVexQQ=",
+        "lastModified": 1761781488,
+        "narHash": "sha256-mFI7lcIrCntnbNd3GL08e8c1t6kmfoMwE5JSiHT8iPM=",
         "ref": "refs/heads/master",
-        "rev": "89eafc71c148c524e9459132e85b5af12b56914a",
-        "revCount": 107,
+        "rev": "eff7ef89920ddca2dff8882bd57b8c03b6a843a0",
+        "revCount": 109,
         "type": "git",
         "url": "https://git.irlqt.net/crow/cli-flake"
       },
