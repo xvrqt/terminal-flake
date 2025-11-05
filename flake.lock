@@ -8,11 +8,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1761781708,
-        "narHash": "sha256-86HjCkb2e9T6N0qx/mN7gQOEc3PfjukvHhryVjbhDt8=",
+        "lastModified": 1762381797,
+        "narHash": "sha256-CoCHRQ+hYy+lmhRovRYLV/nfCMcn6j2s/6vvx6ua/z4=",
         "ref": "refs/heads/master",
-        "rev": "321233d92a4d47c7b60fd3a14415fad12ff2c3f2",
-        "revCount": 110,
+        "rev": "0fd0f6592bcef28b9482895d20150c5580409907",
+        "revCount": 113,
         "type": "git",
         "url": "https://git.irlqt.net/crow/cli-flake"
       },
@@ -154,11 +154,11 @@
         "zon2nix": "zon2nix"
       },
       "locked": {
-        "lastModified": 1761760247,
-        "narHash": "sha256-wsYY+Z/pim/4TabIIMHGFD+MAoUbxuqAblB7DjMe6gw=",
+        "lastModified": 1762353274,
+        "narHash": "sha256-CJCPZ5VZSfBKRpVUuSgpH4dJsodAwbky3m7aPhb8hEU=",
         "owner": "ghostty-org",
         "repo": "ghostty",
-        "rev": "a4d54dca1c50ea1a347da796735aacb66d69eaa0",
+        "rev": "d43be638516d5a1f671c74a67b10724fbb363f6b",
         "type": "github"
       },
       "original": {
@@ -324,11 +324,11 @@
     },
     "nixpkgs_5": {
       "locked": {
-        "lastModified": 1761656231,
-        "narHash": "sha256-EiED5k6gXTWoAIS8yQqi5mAX6ojnzpHwAQTS3ykeYMg=",
+        "lastModified": 1762286042,
+        "narHash": "sha256-OD5HsZ+sN7VvNucbrjiCz7CHF5zf9gP51YVJvPwYIH8=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "e99366c665bdd53b7b500ccdc5226675cfc51f45",
+        "rev": "12c1f0253aa9a54fdf8ec8aecaafada64a111e24",
         "type": "github"
       },
       "original": {
