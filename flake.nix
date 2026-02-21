@@ -6,16 +6,16 @@
 
     # Useful CLI programs
     cli.url = "git+https://git.irlqt.net/crow/cli-flake";
-    cli.inputs.nixpkgs.follows = "nixpkgs";
+    # cli.inputs.nixpkgs.follows = "nixpkgs";
     # Preconfigured NeoVim
-    neovim.url = "github:xvrqt/neovim-flake";
+    # neovim.url = "github:xvrqt/neovim-flake";
     # Ghostty Terminal Emulator Flake
     ghostty.url = "github:ghostty-org/ghostty";
   };
 
   outputs =
     { cli
-    , neovim
+      # , neovim
     , nixpkgs
     , ghostty
     , flake-utils
@@ -52,9 +52,9 @@
           imports =
             [
               # CLI Programs, Shell Configurations, Starship, ...
-              cli.homeManagerModules.${system}.default
+              cli.homeManagerModules.default
               # Extremely customized NeoVim
-              neovim.homeManagerModules.${system}.default
+              # neovim.homeManagerModules.${system}.default
               # Terminal Emulator Configurations
               (import ./homeManagerModule.nix { inherit lib emulators; })
               # Configure the sub-flakes based on terminal options
